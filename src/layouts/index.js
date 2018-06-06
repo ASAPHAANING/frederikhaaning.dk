@@ -83,7 +83,6 @@ class Template extends React.Component {
 
     let content;
 
-    if (location.pathname === rootPath) {
       content = (
         <div id="wrapper">
           <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
@@ -96,18 +95,7 @@ class Template extends React.Component {
           />
           <Footer timeout={this.state.timeout} />
         </div>
-      )
-    } else {
-      content = (
-        <div id="wrapper" className="page">
-          <div style={{
-            maxWidth: '1140px'
-          }}>
-            {children()}
-          </div>
-        </div>
-      )
-    }
+      );
 
     return (
       <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
