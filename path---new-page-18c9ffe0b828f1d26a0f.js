@@ -1,2 +1,2 @@
-webpackJsonp([0x5d16ea1533fc],{337:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Frederik Haaning",description:""}}},pathContext:{}}}});
+webpackJsonp([0x5d16ea1533fc],{338:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Frederik Haaning",description:""}}},pathContext:{}}}});
 //# sourceMappingURL=path---new-page-18c9ffe0b828f1d26a0f.js.map
