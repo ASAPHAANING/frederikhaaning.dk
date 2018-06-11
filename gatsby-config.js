@@ -4,7 +4,6 @@ module.exports = {
     author: "Frederik Haaning",
     description: ""
   },
-  pathPrefix: "/frederikhaaning.dk",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,6 +30,20 @@ module.exports = {
             },
           },
           "gatsby-remark-copy-linked-files",
+          {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              trackingId: "UA-120617723-1",
+              // Puts tracking script in the head instead of the body
+              head: false,
+              // Setting this parameter is optional
+              anonymize: true,
+              // Setting this parameter is also optional
+              respectDNT: true,
+              // Avoids sending pageview hits from custom paths
+              exclude: ["/preview/**", "/do-not-track/me/too/"],
+            },
+          },
         ],
       },
     },
